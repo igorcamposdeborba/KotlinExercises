@@ -3,7 +3,7 @@ package fundamentos.basico
 fun main() {
     val a: Int = 1
     val b: String = "2"
-    val c: String = "teste"
+    val c: String = "Teste"
 
     println(a + b.toInt() + (c.toIntOrNull() ?: 0));
 

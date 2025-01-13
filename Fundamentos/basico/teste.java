@@ -1,6 +1,6 @@
 package fundamentos.basico;
 
-public class teste {
+public class Teste {
 
     public static void main(String[] args) {
         boolean tv = true;
