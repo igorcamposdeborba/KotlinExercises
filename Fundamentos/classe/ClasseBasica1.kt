@@ -9,6 +9,7 @@ class ClasseBasica3 (nome: String){ // !todo: disponível apenas no construtor
 }
 class ClasseBasica4 (nome: String){ // !todo: disponível apenas no construtor
 }
+
 fun main() {
     val cliente1: ClasseBasica1 = ClasseBasica1("Igor")
     println(cliente1.nome)
