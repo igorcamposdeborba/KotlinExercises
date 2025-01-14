@@ -17,7 +17,7 @@ class Variaveis2 {
         val local: Int = 7
         if(local > 3){
             val variavelDeBloco = "Beltrano"
-            println("${diretamenteNoArquivo}, $constanteStaticDeClasse, $local, $variavelDeBloco")
+            println("${diretamenteNoArquivo}, $variavelDeInstancia, $constanteStaticDeClasse, $local, $variavelDeBloco")
         }
     }
 }
