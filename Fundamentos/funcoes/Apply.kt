@@ -16,19 +16,19 @@ class Calculadora2 {
 
 fun main() {
     val calculadora: Calculadora2 = Calculadora2()
-    calculadora.apply{ soma(4, 2) }.apply { add(4) }.apply { println(resultado) }
-    calculadora.apply { reset() }
+    calculadora.apply{ soma(4, 2) }.apply { add(4) }.apply { println(resultado) }.apply { reset() }
 
     calculadora.apply { soma(4, 2)
                                       add(4)
                                       println(resultado)
+                                      reset()
     }
-    calculadora.apply { reset() }
 
     // inline function
     with (calculadora){
         soma(4, 2)
         add(4)
         println(this.resultado)
+        reset()
     }
 }
