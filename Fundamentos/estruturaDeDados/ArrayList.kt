@@ -18,16 +18,22 @@ fun main() {
 
     }
 
-    // ArrayList de objetos
-    var frutas : MutableList<Fruta> = arrayListOf<Fruta>(Fruta("Banana", 1.50), Fruta("Morango", 3.20))
+    // MutableList é a classe abstrata de ArrayList de objetos
+    var frutas : MutableList<Fruta> = arrayListOf<Fruta>(Fruta("Banana", 1.50), Fruta("Morango", 1.50))
     frutas.forEach{
         println("${it.nome} - R$ %.2f".format(it.preco))
     }
 
-    println(frutas.contains(Fruta("Banana", 1.50)))
+    println(frutas.contains(Fruta("Banana", 1.50))) // equals pré-implementado no data class para comparar por valor, mesmo sendo objetos com endereços de memória diferentes
+
+    println(frutas.distinctBy { it.preco })
+    frutas.add(Fruta("Melancia", 3.0))
+    println(frutas)
+    frutas.shuffle()
+    println(frutas)
 }
 
-// igual ao Record do java. Já implementa equals and hashcode para comparar pelo valor e atribuir um id de comparacao
+// igual ao Record do java. data class implementa equals and hashcode para comparar pelo valor e atribuir um id de comparacao
 data class Fruta (var nome: String, var preco: Double)
 
 
