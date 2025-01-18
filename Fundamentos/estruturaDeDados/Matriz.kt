@@ -20,4 +20,5 @@ fun main() {
             println("$linha $coluna - ${matriz[linha][coluna]}")
         }
     }
+
 }
