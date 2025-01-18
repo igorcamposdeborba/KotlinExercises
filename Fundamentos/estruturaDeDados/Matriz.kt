@@ -10,5 +10,14 @@ fun main() {
         }
     }
 
-    matriz.forEach { i -> i.forEach { j -> println(j) } }
+    matriz.forEach { i ->
+            i.forEach { j -> println(j)
+        }
+    }
+
+    for ((linha, linhaArray) in matriz.withIndex()){
+        for ((coluna, valor) in linhaArray.withIndex()){
+            println("$linha $coluna - ${matriz[linha][coluna]}")
+        }
+    }
 }
