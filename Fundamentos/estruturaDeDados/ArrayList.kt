@@ -18,4 +18,16 @@ fun main() {
 
     }
 
+    // ArrayList de objetos
+    var frutas : MutableList<Fruta> = arrayListOf<Fruta>(Fruta("Banana", 1.50), Fruta("Morango", 3.20))
+    frutas.forEach{
+        println("${it.nome} - R$ %.2f".format(it.preco))
+    }
+
+    println(frutas.contains(Fruta("Banana", 1.50)))
 }
+
+// igual ao Record do java. Já implementa equals and hashcode para comparar pelo valor e atribuir um id de comparacao
+data class Fruta (var nome: String, var preco: Double)
+
+
