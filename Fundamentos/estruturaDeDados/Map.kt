@@ -41,4 +41,7 @@ fun main() {
     })
     mapa2.print()
 
+    for ((cpf, nome) in mapa2){
+        println("CPF: $cpf e nome: ${nome}")
+    }
 }
