@@ -1,6 +1,7 @@
 package fundamentos.estruturaDeDados
 
 fun main() {
+    // !todo: Array é fixo
     val numeros: Array<Int> = Array<Int>(5) { i -> i * 10 }
 
     numeros.forEach { println(it) }
@@ -15,4 +16,9 @@ fun main() {
     for (i in numeros){
         println(i)
     }
+
+    // !todo: ArrayList é dinâmico. MutableList é o List do java no kotlin
+    val lista : MutableList<String> = arrayListOf("Carro", "Moto", "Barco", "Aviao")
+
+    lista.forEach{ println(it.uppercase()) }
 }
