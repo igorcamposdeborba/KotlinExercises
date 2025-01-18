@@ -12,5 +12,5 @@ fun main() {
     aprovados3.print()
 
     aprovados3.sortedBy { it -> it.substring(1) }.print() // Sorted com ordenação personalizada
-    
+
 }
