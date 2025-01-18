@@ -22,6 +22,4 @@ fun main() {
     println(conjunto2)
     conjunto2.isEmpty().print()
 
-
-
 }
