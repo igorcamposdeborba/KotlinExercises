@@ -26,5 +26,15 @@ open class  Carro (val velocidadeMaxima: Int = 200, var velocidadeAtual: Int = 0
 
 
 fun main() {
+    val carro = Ferrari()
+    carro.acelerar()
+    println(carro)
 
+    carro.ligarTurbo()
+    carro.acelerar()
+    println(carro)
+
+    carro.frear()
+    carro.frear()
+    println(carro)
 }
