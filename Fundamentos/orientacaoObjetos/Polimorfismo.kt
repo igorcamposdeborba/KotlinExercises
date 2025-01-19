@@ -12,7 +12,7 @@ class Ovo(peso: Double): Comida(peso)
 
 
 class Pessoa(var peso: Double){
-    fun comer(comida: Comida){
+    fun comer(comida: Comida){ // polimorfismo: Comida que é uma open class (herança) que é chamada via super()
         peso += comida.peso
     }
 }
